@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <title>Panel de Administrador</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <h2>Crear nuevo usuario</h2>
-  <form id="registerForm">
-    <input type="text" id="newUsername" placeholder="Usuario" required>
-    <input type="password" id="newPassword" placeholder="Contraseña" required>
-    <select id="role">
-      <option value="usuario">Usuario</option>
-      <option value="admin">Administrador</option>
-    </select>
-    <button type="submit">Registrar</button>
-  </form>
+  <div class="form-container">
+    <h2>Registrar nuevo usuario</h2>
+    <form id="registerForm">
+      <input type="text" id="nuevoUsuario" placeholder="Usuario" required />
+      <input type="password" id="nuevaContrasena" placeholder="Contraseña" required />
+      <select id="rol" required>
+        <option value="">Selecciona un rol</option>
+        <option value="usuario">Usuario</option>
+        <option value="admin">Administrador</option>
+      </select>
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
 
   <script type="module" src="js/registerUser.js"></script>
 </body>
 </html>
-
