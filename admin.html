@@ -24,6 +24,21 @@
 
   <script type="module" src="js/registerUser.js"></script>
   <button onclick="logout()" style="position:absolute; top:20px; right:20px;">Cerrar sesión</button>
+  <script type="module">
+  import { signOut } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+  import { auth } from "./js/firebase.js";
+
+  window.logout = async function() {
+    try {
+      await signOut(auth);
+      window.location.href = "login.html";
+    } catch (error) {
+      console.error("Error al cerrar sesión:", error);
+    }
+  };
+</script>
+
 </body>
 </html>
+
 
