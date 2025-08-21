@@ -1,76 +1,42 @@
-/* Reset básico */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Fondo general */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f6f8;
+  background-color: #f2f4f8;
+  margin: 0;
+  padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Contenedor del formulario */
-.login-container {
-  background-color: #ffffff;
-  padding: 40px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.login-container, .form-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   width: 100%;
-  max-width: 400px;     /* Limita el ancho máximo */
-  min-width: 300px;     /* Asegura buena visibilidad en móviles */
+  max-width: 350px;
 }
 
-/* Título */
-.login-container h2 {
-  text-align: center;
-  margin-bottom: 24px;
-  color: #222;
-  font-size: 24px;
-}
-
-/* Campos de entrada */
-.login-container input {
+input, select {
   width: 100%;
-  padding: 12px 14px;
-  margin-bottom: 16px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 15px;
-  transition: border 0.2s ease;
 }
 
-.login-container input:focus {
-  outline: none;
-  border-color: #007bff;
-}
-
-/* Botón */
-.login-container button {
+button {
   width: 100%;
-  padding: 12px;
+  padding: 10px;
   background-color: #007bff;
-  border: none;
-  border-radius: 6px;
   color: white;
-  font-size: 16px;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
-.login-container button:hover {
+button:hover {
   background-color: #0056b3;
-}
-
-/* Mensaje de error */
-#errorMessage {
-  color: red;
-  font-size: 14px;
-  text-align: center;
-  margin-top: 10px;
 }
